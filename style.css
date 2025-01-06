@@ -62,7 +62,7 @@ body {
     border-radius: 50%;
     border: 0 solid rgb(255, 187, 0);
     font-size: 24px;
-
+    box-shadow: 0px 1px 10px rgba(1, 1, 1, 1);
   }
   
 

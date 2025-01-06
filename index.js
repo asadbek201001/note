@@ -12,14 +12,18 @@ var todoArray = [];
 
 
 addButton.addEventListener("click", function () {
-  var titleValue = titleInput.value.trim();
-  var contentValue = contentInput.value.trim();
+  var titleValue = titleInput.value;
+  var contentValue = contentInput.value;
 
 
   var newTodo = {
     title: titleValue,
     content: contentValue,
   };
+  if(titleValue === "" || titleValue === "") {
+    alert("Please enter both title and content.");
+    return;
+  }
 
   todoArray.push(newTodo);
 
