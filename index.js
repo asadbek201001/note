@@ -46,13 +46,13 @@ addButton.addEventListener("click", function () {
 
 
   var deleteButton = document.createElement("button");
-  deleteButton.style.marginLeft = "180px";
   deleteButton.style.backgroundImage = "url('./Screenshot 2025-01-05 at 21.47.46.png')";
   deleteButton.style.width = "40px";
   deleteButton.style.height = "40px";
   deleteButton.style.borderRadius = "5px";
   deleteButton.innerHTML = "&#128465;"; 
   deleteButton.classList.add("delete-button");
+  deleteButton.id = "deleteButton_";
   deleteButton.addEventListener("click", function () {
     
     notesContainer.removeChild(noteContainer);
